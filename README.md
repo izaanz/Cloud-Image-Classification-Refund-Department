@@ -24,7 +24,7 @@ This README helps you run it on your own computer (locally) or on the internet (
 *   `cnn_14_0.889.h5`: **You need to add your trained model file here!**
 *   `README.md`: This guide!
 
-## Getting Started (On Your Computer) 💻
+## Getting Started (On Your Computer - Locally) 💻
 
 This is great for testing and understanding how it works locally.
 
@@ -56,7 +56,13 @@ This is great for testing and understanding how it works locally.
    ```
    This starts a mini web server, usually at `http://localhost:5000`.
 
-**3. Process Images in Batches:**
+**3.Testing Locally:**
+   *   Use the `test_api.py` to test the locally ran server - make sure to specify test image in `test_api.py`
+   *   If using docker to run locally - use `test_docker.py` to test docker locally.
+   *   Open a *new* terminal and run:
+
+
+**4. Process Images in Batches:**
 
    *   Make sure `app.py` is still running in its terminal.
    *   Put some test `.jpg` or `.png` images in your `NEW_IMAGES_DIR`.
@@ -65,7 +71,7 @@ This is great for testing and understanding how it works locally.
      python batch_processor.py
      ```
    *   **Check Results:** Look at the terminal output, the CSV log file it creates, and see if images moved from `New` to `Processed` or `Failed` folders.
-   *   The model is capable of detecting the following 10 classes, not specific tho: ```
+   *   The model and the script is capable of detecting the following 10 classes: ```
     'dress',
     'hat',
     'longsleeve',
@@ -77,7 +83,7 @@ This is great for testing and understanding how it works locally.
     'skirt',
     't-shirt' ```
 
-**4. (Optional) Schedule it for Nightly Runs (Windows):**
+**5. (Optional) Schedule it for Nightly Runs (Windows):**
 
    *   Search "Task Scheduler" in Windows.
    *   "Create Basic Task..."

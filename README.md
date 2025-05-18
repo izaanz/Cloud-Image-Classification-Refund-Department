@@ -19,6 +19,7 @@ This README helps you run it on your own computer (locally) or on the internet (
 - `batch_processor.py`: A script to process many images at once (for local use).
 - `lambda_function.py`: The script for AWS Lambda to process images in the cloud.
 - `Dockerfile`: Instructions to package `app.py` into a portable "Docker container".
+- `.dockerignore`: Contains instructions to ignore following files from docker: `batch_procesor.py`, `test_api.py`, `test_docker.py`, `lambda_function.py`
 - `requirements.txt`: List of Python tools needed.
 - `cnn_14_0.889.h5`: **You need to add your trained model file here!**
 - `README.md`: This guide!

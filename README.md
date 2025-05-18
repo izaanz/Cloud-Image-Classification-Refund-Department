@@ -1,6 +1,8 @@
 
 # Refund Item Classifier 🛍️➡️🤖
 
+This project is part of the course: DLBDSMTP01 – Project: From Model to Production
+
 This project automatically classifies pictures of returned clothing items using a smart image recognition model  (CNN Transfer Learning on top of Xception). It's designed to help an online store sort refunds faster!
 
 Think of it like this:
@@ -13,16 +15,18 @@ This README helps you run it on your own computer (locally) or on the internet (
 ## What's Inside? 📁
 
 *   `app.py`: The "brain" - a Flask web service that does the image classification.
+*   `test_api.py` To test the local sever by sending image.
+*   `test_docker.py` To test locally deployed docker server.
 *   `batch_processor.py`: A script to process many images at once (for local use).
 *   `lambda_function.py`: The script for AWS Lambda to process images in the cloud.
 *   `Dockerfile`: Instructions to package `app.py` into a portable "Docker container".
 *   `requirements.txt`: List of Python tools needed.
-*   `xception_clothes_model.h5`: **You need to add your trained model file here!**
+*   `cnn_14_0.889.h5`: **You need to add your trained model file here!**
 *   `README.md`: This guide!
 
 ## Getting Started (On Your Computer) 💻
 
-This is great for testing and understanding how it works.
+This is great for testing and understanding how it works locally.
 
 **1. Setup Your Project:**
 
@@ -40,9 +44,9 @@ This is great for testing and understanding how it works.
      Then run: `pip install -r requirements.txt`
    *   **Model:** Trained Model available `cnn_14_0.889.h5` file in the main project folder.
    *   **Edit Settings:**
-     *   In `app.py`: Check `MODEL_PATH` and update.
+     *   In `app.py`: Check `MODEL_PATH`.
      *   In `batch_processor.py`: Change folder paths like `NEW_IMAGES_DIR` to where you'll keep your test images (e.g., `C:\MyRefundProject\NewImages`).
-   *   **Make Folders:** Create the image folders you set in `batch_processor.py`.
+   *   **Make Folders:** Create the image folders you set in `batch_processor.py`, if they doesn't exist already.
 
 **2. Run the "Brain" (Flask API):**
 

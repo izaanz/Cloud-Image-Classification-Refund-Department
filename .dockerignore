@@ -1,0 +1,4 @@
+# Ignores the following test/local files from being copied into docker container
+batch_procesor.py
+test_api.py
+test_docker.py

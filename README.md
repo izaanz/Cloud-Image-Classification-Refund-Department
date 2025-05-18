@@ -103,7 +103,7 @@ This lets your project run online, accessible from anywhere.
 *   AWS CLI (like a remote control for AWS from your terminal).
 *   Docker Desktop (to build your app "container").
 
-**Simplified Steps:**
+**Steps:**
 
 **1. "Dockerize" Your App (Package it up):**
 
@@ -111,10 +111,8 @@ This lets your project run online, accessible from anywhere.
    *   Your `Dockerfile` tells Docker how to build an image of your app.
    *   Your `requirements.txt` should include `gunicorn` for this.
    *   **Build the Docker image:**
-     ```bash
-     docker build -t refund-classifier-api .
-     ```
-   *   **Test it locally first:** (e.g., `docker run -p 5001:80 refund-classifier-api` and test `http://localhost:5001/predict` by sending image files).
+     `docker build -t refund-classifier-api .`
+   *    **Test it locally first:** (e.g., `docker run -p 5001:80 refund-classifier-api` and test `http://localhost:5001/predict` by sending image files).
 
 **2. Set Up AWS Resources:**
 

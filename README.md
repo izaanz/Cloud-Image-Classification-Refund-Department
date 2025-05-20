@@ -68,6 +68,8 @@ python app.py
 ```
 This starts a mini web server, usually at `http://localhost:5000`.
 
+- You can also check if its loaded properly by visiting `http://localhost:5000/health` - This will return status OK if the model is loaded properly
+
 ### 3. Testing Locally:
 
 - Use the `test_api.py` to test the locally ran server - make sure to specify test image in `test_api.py`.

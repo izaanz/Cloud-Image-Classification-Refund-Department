@@ -197,10 +197,9 @@ This lets your project run online, accessible from anywhere.
   - `S3_BUCKET_NAME`: Your S3 bucket.
   - `API_ENDPOINT`: URL of your API running on EC2.
 
-## Tips & Next Steps ✨
+## Tips ✨
 
 - **Start Simple:** Get the local version working perfectly before moving to AWS.
 - **Test Each Part:** When on AWS, test your EC2 API first, then Lambda, then the scheduler.
 - **Check Logs:** CloudWatch Logs (for Lambda) and `docker logs` (on EC2) are your best friends for debugging.
 - **Free Tier:** Be mindful of AWS Free Tier limits to avoid unexpected bills.
-- **Make it Better:** Add more error handling, security, or even a web page to upload images!

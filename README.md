@@ -48,7 +48,7 @@ This is great for testing and understanding how it works locally.
 
 - **Install Tools:**  
   `requirements.txt` has: `Flask`, `tensorflow-cpu`, `Pillow`, `numpy`, `requests`.
-  Use `tensorflow` instead of `tensorflow-cpu` if you have a GPU capable of comptue, or depolying in a server that have GPU. Else, use CPU for AWS.
+  Use `tensorflow` instead of `tensorflow-cpu` if you have a GPU capable of compute, or deploying in a server that has GPU. Else, use CPU for AWS.
   Then run:  
   ```bash
   pip install -r requirements.txt

@@ -127,7 +127,6 @@ This lets your project run online, accessible from anywhere.
 #### 1. "Dockerize" Your App (Package it up):
 
 - Your `app.py` should be the version that takes image *files*, not just paths.
-- Your `Dockerfile` tells Docker how to build an image of your app.
 - Your `requirements.txt` should include `gunicorn` for this.
 - **Build the Docker image:**
   ```bash
